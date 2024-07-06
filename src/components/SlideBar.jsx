@@ -47,12 +47,19 @@ export const SlideBar = () =>
 
   return (
     <div className="flex"> { number }
+
+
+
       <div className={ ` ${ open ? "w-72" : "w-20" } h-screen bg-dark-purple relative transition-all duration-150` } >
         <AiOutlineArrowLeft
-          className={ `bg-white w-10 h-10 -right-3 absolute pl-2 rounded-full   border-red-800 border-2 transition-all duration-500 ${ !open && "rotate-180" }` }
+          className={ `bg-white w-9 h-9 -right-3 mt-20 p-1 absolute  rounded-full  border-black border-2 transition-all duration-500 ${ !open && "rotate-180" }            ` }
           onClick={ () => setOpen( !open ) }
-          style={ { cursor: "pointer", transform: open && "rotate(180deg)", } } ></AiOutlineArrowLeft>
+          style={ { cursor: "pointer", transform: open && "rotate(180deg)", } }
+        />
+
         <div className="flex gap-4">
+
+
           {/* logo -----------------------*/ }
           <AiOutlineYoutube
             style={ { transform: open && "rotate(180deg)", } }
